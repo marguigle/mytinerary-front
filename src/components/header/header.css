@@ -1,0 +1,7 @@
+.header-main {
+  display: flex;
+  width: 900px;
+  box-sizing: border-box;
+  justify-content: flex-start;
+  margin: auto;
+}
