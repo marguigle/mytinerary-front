@@ -1,7 +1,12 @@
 .header-main {
+  background-color: coral;
+  height: 15vh;
   display: flex;
-  width: 900px;
-  box-sizing: border-box;
-  justify-content: flex-start;
-  margin: auto;
+  width: 100vw;
+  box-sizing: content-box;
+  justify-content: space-around;
+  align-items: center;
+}
+.container-btn {
+  display: flex;
 }

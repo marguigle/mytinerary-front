@@ -1,0 +1,15 @@
+.container-body {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+
+.container-hero {
+  margin-top: 15vh;
+  margin-left: 20vw;
+  width: 300px;
+  height: 300px;
+}
+.img-hero {
+  max-width: 150px;
+}
