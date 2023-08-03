@@ -6,6 +6,8 @@
   box-sizing: content-box;
   justify-content: space-around;
   align-items: center;
+  border: 2px solid black;
+  box-shadow: 0px -5px 10px 15px #706363;
 }
 .container-btn {
   display: flex;

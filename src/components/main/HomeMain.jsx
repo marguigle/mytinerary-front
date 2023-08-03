@@ -1,6 +1,6 @@
-import "./body.css";
+import "./main.css";
 
-const Body = () => {
+const HomeMain = () => {
   return (
     <body className="container-body">
       <div className="container-hero">
@@ -19,4 +19,4 @@ const Body = () => {
   );
 };
 
-export default Body;
+export default HomeMain;
