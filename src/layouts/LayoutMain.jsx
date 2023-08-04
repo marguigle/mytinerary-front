@@ -1,4 +1,4 @@
-const LayoutMain = () => {
+const LayoutMain = (props) => {
   return (
     <>
       <header className="header-main">
@@ -9,7 +9,7 @@ const LayoutMain = () => {
           <button>login</button>
         </navbar>
       </header>
-      <main></main>
+      <main>{props.children}</main>
 
       <footer>Footer</footer>
     </>
