@@ -1,11 +1,11 @@
 import "./home.css";
 import LayoutMain from "../layouts/LayoutMain";
-
+import Carrucel from "../components/carrusel/Carrucel";
 const Home = () => {
   return (
     <LayoutMain>
       <body className="container-body">
-        <div className="container-hero">
+        <section className="container-hero">
           <h3>FIND THE PERFECT DESTINATION</h3>
           <p>
             Find your perfect trip, designed by insiders who know and love their
@@ -16,17 +16,10 @@ const Home = () => {
             alt=""
             className="img-hero"
           />
-        </div>
-
-        <div className="contenedor-carrusel">
-          <button className="btn-carrusel">{"<"}</button>
-          <img
-            src="../../../public/img/munich-1572429_1280.jpg"
-            className="img-carrusel"
-            alt=""
-          />
-          <button className="btn-carrusel">{">"}</button>
-        </div>
+        </section>
+        <section>
+          <Carrucel />
+        </section>
       </body>
     </LayoutMain>
   );

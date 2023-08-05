@@ -1,0 +1,12 @@
+.btn-carrusel {
+  height: 4rem;
+}
+.contenedor-carrusel {
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  object-fit: cover;
+}
+.img-carrusel {
+  width: 500px;
+}

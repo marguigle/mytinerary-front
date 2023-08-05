@@ -2,6 +2,7 @@
   background-color: coral;
   height: 15vh;
   display: flex;
+
   width: 100vw;
   box-sizing: content-box;
   justify-content: space-around;
@@ -11,4 +12,6 @@
 }
 .container-btn {
   display: flex;
+  justify-content: space-around;
+  gap: 4;
 }
