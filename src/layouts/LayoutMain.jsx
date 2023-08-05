@@ -1,17 +1,11 @@
+import Header from "../components/header/Header";
+import Footer from "../components/footer/Footer";
 const LayoutMain = (props) => {
   return (
     <>
-      <header className="header-main">
-        <h3>My Tinerary</h3>
-        <navbar className="container-btn">
-          <button>home</button>
-          <button>cities</button>
-          <button>login</button>
-        </navbar>
-      </header>
+      <Header />
       <main>{props.children}</main>
-
-      <footer>Footer</footer>
+      <Footer />
     </>
   );
 };

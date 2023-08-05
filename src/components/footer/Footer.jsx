@@ -1,6 +1,5 @@
-// eslint-disable-next-line no-unused-vars
-import React from "react";
-
-export const Footer = () => {
-  return <div>Footer</div>;
+const Footer = () => {
+  return <h2>Footer</h2>;
 };
+
+export default Footer;
