@@ -10,7 +10,7 @@ const Home = () => {
           Find your perfect trip, designed by insiders who know and love their
           cities!
         </p>
-        <button className="btn btn-secondary btn-hero">mas informacion</button>
+        <button className=" boton-hero">view more</button>
       </section>
       <section>
         <Carrucel />

@@ -2,16 +2,22 @@ import "./header.css";
 
 const Header = () => {
   return (
-    <div className="header-main ">
+    <div className=" container-fluid header-main ">
       <h1 className="nombreHeader">My Tinerary</h1>
+      <a
+        href="https://www.flaticon.es/iconos-gratis/usuario"
+        title="usuario iconos"
+      >
+        Usuario iconos creados por Smashicons - Flaticon
+      </a>
       <nav className="container-btn ">
-        <button className="btn btn-secondary btn-nav">
+        <button className=" boton-nav">
           <a href="#">home</a>
         </button>
-        <button className="btn btn-secondary btn-nav">
+        <button className=" boton-nav">
           <a href="#">cities</a>
         </button>
-        <button className="btn btn-secondary btn-nav ">
+        <button className=" boton-nav ">
           <a href="#">login</a>
         </button>
       </nav>
