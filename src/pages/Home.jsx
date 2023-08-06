@@ -6,16 +6,11 @@ const Home = () => {
     <LayoutMain>
       <body className="container-body">
         <section className="container-hero">
-          <h3>FIND THE PERFECT DESTINATION</h3>
+          <h3 className="p-4">FIND THE PERFECT DESTINATION</h3>
           <p>
             Find your perfect trip, designed by insiders who know and love their
             cities!
           </p>
-          <img
-            src="../../../public/img/copenhagen-142711_1280.jpg"
-            alt=""
-            className="img-hero"
-          />
         </section>
         <section>
           <Carrucel />

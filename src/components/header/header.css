@@ -3,12 +3,12 @@
   height: 15vh;
   display: flex;
 
-  width: 100vw;
-  box-sizing: content-box;
+  width: 100%;
+  box-sizing: border-box;
   justify-content: space-around;
   align-items: center;
-  border: 2px solid black;
-  box-shadow: 0px -5px 10px 15px #706363;
+  border: 1px solid black;
+  /* box-shadow: 0px 5px 10px 15px #706363; */
 }
 .container-btn {
   display: flex;
