@@ -47,33 +47,37 @@ const Carrucel = () => {
 
   return (
     <>
-      <section className="section-carousel ">
-        <button className="btn-carroucel" onClick={prev}>
-          {"<"}
-        </button>
-        <div className="contenedor-carrusel ">
-          <img
-            src={fotoCiudades[indice].foto1}
-            alt=""
-            className="img-carrusel"
-          />
-          <img
-            src={fotoCiudades[indice].foto2}
-            alt=""
-            className="img-carrusel"
-          />
-          <img
-            src={fotoCiudades[indice].foto3}
-            alt=""
-            className="img-carrusel"
-          />
-          <img
-            src={fotoCiudades[indice].foto4}
-            alt=""
-            className="img-carrusel"
-          />
-        </div>
-        <button onClick={next}>{">"}</button>
+      <section className="tituloCarrusel">
+        <h2>Popular Mytineraries</h2>
+
+        <section className="section-carousel ">
+          <button className="btn-carroucel" onClick={prev}>
+            {"👈"}
+          </button>
+          <div className="contenedor-carrusel ">
+            <img
+              src={fotoCiudades[indice].foto1}
+              alt=""
+              className="img-carrusel"
+            />
+            <img
+              src={fotoCiudades[indice].foto2}
+              alt=""
+              className="img-carrusel"
+            />
+            <img
+              src={fotoCiudades[indice].foto3}
+              alt=""
+              className="img-carrusel"
+            />
+            <img
+              src={fotoCiudades[indice].foto4}
+              alt=""
+              className="img-carrusel"
+            />
+          </div>
+          <button onClick={next}>{"👉"}</button>
+        </section>
       </section>
     </>
   );

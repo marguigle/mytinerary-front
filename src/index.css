@@ -21,7 +21,7 @@
 body {
   margin: 0;
   box-sizing: border-box;
-
+  background-color: black;
   display: flex;
   flex-direction: column;
   place-items: start;

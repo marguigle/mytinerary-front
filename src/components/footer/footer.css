@@ -1,0 +1,6 @@
+.footer > h2 {
+  height: 20vh;
+  text-align: center;
+  background-color: rgb(39, 33, 71);
+  color: blue;
+}

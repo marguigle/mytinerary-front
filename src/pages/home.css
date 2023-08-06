@@ -11,15 +11,12 @@
   gap: 1.3rem;
   color: rgb(2, 62, 114);
   font-size: 1.3rem;
+  height: 700px;
+  background-image: url("../public/img/paris-100277_1280.jpg");
+
   /*   
-  
- 
-  
-  
   justify-content: flex-start;
  width: 1280px;  */
-  background-image: url("../public/img/paris-100277_1280.jpg");
   /*   
   object-fit: cover;*/
-  height: 700px;
 }

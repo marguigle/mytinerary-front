@@ -5,7 +5,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #646161;
+  background-color: #000000;
+}
+.tituloCarrusel {
+  margin: 3rem 0rem;
+  text-align: center;
+  background-color: #000000;
+  color: rgb(3, 3, 226);
 }
 
 .contenedor-carrusel {
@@ -23,13 +29,15 @@
   border: 1px solid rebeccapurple;
   border-radius: 3px;
   max-width: 450px;
+  max-height: 340px;
 }
 
 .btn-carrusel {
   height: 4em;
-  font-size: 5em;
+  font-size: 5rem;
+  border: none;
 }
 .btn-hero {
   width: auto;
-  box-shadow: 0px 0px 5px 3px #646161;
+  box-shadow: 0px 0px 5px 3px #000000;
 }
