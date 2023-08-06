@@ -2,16 +2,28 @@
   background-color: coral;
   height: 15vh;
   display: flex;
-
-  width: 100%;
+  max-width: 100%;
   box-sizing: border-box;
   justify-content: space-around;
   align-items: center;
-  border: 1px solid black;
+  border: 1px solid #646161;
+
   /* box-shadow: 0px 5px 10px 15px #706363; */
 }
+h1 {
+  font-size: 1.2rem;
+  text-shadow: 0px 0px 7px 5px #646161;
+}
+
 .container-btn {
   display: flex;
-  justify-content: space-around;
-  gap: 4;
+  gap: 2rem;
+}
+
+.btn-nav {
+  color: #646161;
+  box-shadow: 0px 0px 7px 5px #646161;
+}
+a {
+  text-decoration: none;
 }

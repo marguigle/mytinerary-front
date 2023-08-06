@@ -47,11 +47,11 @@ const Carrucel = () => {
 
   return (
     <>
-      <section className="section-carousel container-flex">
+      <section className="section-carousel ">
         <button className="btn-carroucel" onClick={prev}>
           {"<"}
         </button>
-        <div className="contenedor-carrusel col-6">
+        <div className="contenedor-carrusel ">
           <img
             src={fotoCiudades[indice].foto1}
             alt=""
