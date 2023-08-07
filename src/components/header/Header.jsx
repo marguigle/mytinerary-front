@@ -4,12 +4,7 @@ const Header = () => {
   return (
     <div className=" container-fluid header-main ">
       <h1 className="nombreHeader">My Tinerary</h1>
-      <a
-        href="https://www.flaticon.es/iconos-gratis/usuario"
-        title="usuario iconos"
-      >
-        Usuario iconos creados por Smashicons - Flaticon
-      </a>
+
       <nav className="container-btn ">
         <button className=" boton-nav">
           <a href="#">home</a>
