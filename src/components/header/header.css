@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .header-main {
   background-color: coral;
   height: 15vh;
@@ -9,9 +14,8 @@
   border: 1px solid #646161;
   box-shadow: 0px 0px 7px 5px #646161;
 }
-h1 {
-  font-size: 1.2rem;
-  text-shadow: 0px 0px 7px 5px #646161;
+.nombreHeader {
+  font-size: 1.3rem;
 }
 
 .container-btn ul {
@@ -33,11 +37,40 @@ h1 {
   box-shadow: 2px 2px 2px rgb(73, 27, 10);
 }
 
-.boton-nav {
-  background-color: #646161;
-  box-shadow: 0px 0px 3px 3px #646161;
-  color: white;
-}
 .boton-nav a {
   text-decoration: none;
+}
+
+@media screen and (max-width: 320px) {
+  .header-main {
+    width: 320px;
+  }
+  .container-btn ul {
+    display: none;
+  }
+
+  .burger {
+    font-size: 1.5rem;
+  }
+  h1 {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .container-btn ul {
+    display: none;
+  }
+
+  .burger {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .container-btn ul {
+    display: none;
+  }
+
+  .burger {
+    font-size: 1.5rem;
+  }
 }

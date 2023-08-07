@@ -24,7 +24,7 @@ body {
   background-color: black;
   display: flex;
   flex-direction: column;
-  place-items: start;
+  align-items: center;
 }
 
 h1 {

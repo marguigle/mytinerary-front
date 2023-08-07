@@ -5,6 +5,9 @@ const Header = () => {
     <div className=" container-fluid header-main ">
       <h1 className="nombreHeader">My Tinerary</h1>
       <nav className="container-btn ">
+        <i className="fi fi-br-menu-burger burger"></i>
+        {/*   <i className="fi fi-br-cross cross"></i> */}
+
         <ul>
           <li>
             <a href="#">home</a>{" "}
@@ -16,16 +19,6 @@ const Header = () => {
             <a href="#">login</a>{" "}
           </li>
         </ul>
-
-        {/*         <button className=" boton-nav">
-          <a href="#">home</a>
-        </button>
-        <button className=" boton-nav">
-          <a href="#">cities</a>
-        </button>
-        <button className=" boton-nav ">
-          <a href="#">login</a>
-        </button> */}
       </nav>
     </div>
   );
