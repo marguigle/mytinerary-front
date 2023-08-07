@@ -14,9 +14,23 @@ h1 {
   text-shadow: 0px 0px 7px 5px #646161;
 }
 
-.container-btn {
+.container-btn ul {
   display: flex;
   gap: 2rem;
+  list-style: none;
+}
+.container-btn ul li a {
+  text-decoration: none;
+  padding: 0.5em 1em;
+  color: black;
+  border: 1px solid black;
+  border-radius: 8px;
+}
+.container-btn ul li a:hover {
+  background-color: rgb(247, 80, 20);
+  color: white;
+  border: none;
+  box-shadow: 2px 2px 2px rgb(73, 27, 10);
 }
 
 .boton-nav {
