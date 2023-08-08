@@ -8,23 +8,64 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.3rem;
-  color: rgb(3, 3, 226);
+  justify-content: space-evenly;
+
   font-size: 1.3rem;
   height: 700px;
   background-image: url("../public/img/paris-100277_1280.jpg");
 
+  flex-direction: column;
   /*   
   justify-content: flex-start;
  width: 1280px;  */
-  /*   
-  object-fit: cover;*/
+
+  object-fit: cover;
+}
+.container-hero > h3 {
+  margin-top: 30px;
+  color: rgb(255, 0, 0);
+  font-weight: bold;
+
+  text-shadow: 2px 2px 2px black;
+}
+.container-hero p {
+  display: flex;
+  margin-top: 20px;
+  color: rgb(252, 83, 22);
+  font-weight: bold;
+  text-shadow: 1px 1px 1px black;
+  text-align: center;
 }
 .boton-hero {
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   background-color: #646161;
   border-radius: 12px;
-  color: white;
-  padding: 0 2rem 0 2rem;
+  transition: transform 0.3s ease;
+  padding: 0 2rem 0.5rem 2rem;
   text-shadow: 0px 0px 7px 5px #646161;
+}
+.boton-hero a {
+  text-decoration: none;
+  color: white;
+}
+.boton-hero:hover {
+  background-color: rgb(252, 83, 22);
+  transform: scale(1.1);
+}
+@media (max-width: 321px) {
+  .container-hero > h3 {
+    margin-top: 0px;
+    color: rgb(255, 0, 0);
+    font-weight: bold;
+    text-shadow: 2px 2px 2px black;
+    text-align: center;
+  }
+  .container-hero p {
+    display: flex;
+    /*  margin-top: 20px; */
+    color: rgb(252, 83, 22);
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+    text-align: center;
+  }
 }
