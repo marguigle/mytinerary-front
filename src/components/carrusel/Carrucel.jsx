@@ -76,7 +76,7 @@ const Carrucel = () => {
       <h2>Popular Mytineraries</h2>
 
       <section className="section-carousel">
-        <button className="btn-carroucel" onClick={prev}>
+        <button className="bt-carroucel-prev" onClick={prev}>
           {"👈"}
         </button>
         <div className="contenedor-carrusel">
