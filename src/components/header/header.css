@@ -3,6 +3,13 @@
   padding: 0;
   box-sizing: border-box;
 }
+#nombreHeader {
+  color: rgb(4, 4, 75);
+  margin-left: 2rem;
+  font-size: 2rem;
+  text-shadow: 1px 1px 1px black;
+}
+
 .cross {
   display: none;
 }
@@ -16,11 +23,9 @@
 .navbar {
   background-color: coral;
   height: 48px;
-  /*   display: flex;
-  max-width: 100%;
-  box-sizing: border-box; */
-  /*  justify-content: space-around; */
-  /*   align-items: center; */
+  display: flex;
+  justify-content: space-around;
+  max-width: 1280px;
   border: 1px solid #646161;
   position: relative;
   cursor: pointer;
@@ -47,10 +52,10 @@
 .menu {
   width: 200px;
   position: absolute;
-
-  top: -125px;
+  /* z-index: -1; */
+  top: -128px;
   right: 0px;
-  transition: 250ms;
+  transition: 270ms;
 }
 .menu li {
   list-style: none;
@@ -78,4 +83,35 @@
 }
 .checkbox:checked ~ .menu {
   top: 48px;
+}
+@media (min-width: 560px) {
+  .checkbox,
+  .icons {
+    display: none;
+  }
+  .navbar {
+    height: 80px;
+  }
+  .menu {
+    top: 0;
+    width: unset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .menu ul {
+    margin-left: 4rem;
+  }
+  .menu a {
+    border: 1px solid black;
+    margin: 0.8rem 3rem 0 0;
+    border-radius: 8px;
+    box-shadow: 1px 1px 1px black;
+  }
+  #nombreHeader {
+    color: rgb(4, 4, 75);
+    margin-left: 5rem;
+    font-size: 2rem;
+    text-shadow: 1px 1px 1px black;
+  }
 }
