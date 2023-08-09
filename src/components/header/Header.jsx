@@ -1,4 +1,5 @@
 import "./header.css";
+import { Link as Anchor } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -13,13 +14,13 @@ const Header = () => {
 
         <ul className="menu">
           <li>
-            <a href="#">home</a>{" "}
+            <Anchor to={"/"}>home</Anchor>{" "}
           </li>
           <li>
-            <a href="#">cities</a>{" "}
+            <Anchor to={"cities/"}>cities</Anchor>{" "}
           </li>
           <li>
-            <a href="#">login</a>{" "}
+            <Anchor to={"#"}>login</Anchor>{" "}
           </li>
         </ul>
       </div>
