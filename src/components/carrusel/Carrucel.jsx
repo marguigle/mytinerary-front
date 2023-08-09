@@ -64,7 +64,7 @@ const Carrucel = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       next();
-    }, 2000);
+    }, 3000);
 
     return () => {
       clearTimeout(timer);

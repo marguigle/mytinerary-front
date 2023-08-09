@@ -71,6 +71,8 @@
 }
 .menu li a:hover {
   background-color: rgb(246, 153, 119);
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
 }
 
 .menu ul li a:hover {
