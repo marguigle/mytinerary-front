@@ -1,0 +1,9 @@
+.main-cities {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.main-cities .img-construction {
+  object-fit: cover;
+}
