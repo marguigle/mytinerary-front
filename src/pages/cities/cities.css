@@ -1,9 +1,9 @@
 .main-cities {
+  width: 1280px;
   height: 100vh;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
-.main-cities .img-construction {
-  object-fit: cover;
-}
+

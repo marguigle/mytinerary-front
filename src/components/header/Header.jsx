@@ -28,20 +28,3 @@ const Header = () => {
 };
 
 export default Header;
-
-/*     <div className=" container-fluid header-main ">
-      <h1 id="nombreHeader">My Tinerary</h1>
-      <nav className="container-btn ">
-        <ul>
-          <li>
-            <a href="#">home</a>{" "}
-          </li>
-          <li>
-            <a href="#">cities</a>{" "}
-          </li>
-          <li>
-            <a href="#">login</a>{" "}
-          </li>
-        </ul>
-      </nav>
-    </div> */

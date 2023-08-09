@@ -5,7 +5,11 @@ const Cities = () => {
   return (
     <LayoutCities>
       <div className="main-cities">
-        <img src="../../../public/img/descarga.jpeg " alt="" />
+        <img
+          src="../../../public/img/descarga.jpeg "
+          alt=""
+          className="img-construction"
+        />
       </div>
       ;
     </LayoutCities>
