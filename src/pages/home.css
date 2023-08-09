@@ -1,18 +1,12 @@
 .container-hero {
+  max-width: 1280px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-
   font-size: 1.3rem;
-  height: 700px;
+  height: 85vh;
   background-image: url("../public/img/paris-100277_1280.jpg");
-
-  flex-direction: column;
-  /*   
-  justify-content: flex-start;
- width: 1280px;  */
-
   object-fit: cover;
 }
 .container-hero > h3 {
@@ -61,5 +55,21 @@
     font-weight: bold;
     text-shadow: 1px 1px 1px black;
     text-align: center;
+  }
+}
+@media (max-width: 361px) {
+  .container-hero > h3 {
+    text-align: center;
+    /*   margin-top: 30px; */
+    color: rgb(255, 0, 0);
+    font-weight: bold;
+
+    text-shadow: 2px 2px 2px black;
+  }
+}
+
+@media (max-width: 541px) {
+  .container-hero {
+    margin-bottom: 70px;
   }
 }
