@@ -1,18 +1,47 @@
-.container-footer ul li {
+footer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.container-menu ul li {
   list-style: none;
   display: flex;
-  flex-direction: column;
-  justify-content: stretch;
 }
+
 .anchor {
   width: max-content;
-  background-color: rgb(47, 47, 247);
+  background-color: coral;
+
   margin-bottom: 1rem;
-  padding: 0.5rem;
+  padding: 0.4rem;
   list-style: none;
   text-decoration: none;
   color: white;
   font-size: 1.5rem;
   border: 1px solid black;
   border-radius: 8px;
+}
+.container-redes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-search {
+  display: flex;
+  justify-content: center;
+  align-items: top;
+}
+.bt-search {
+  background-color: coral;
+  height: 2.2rem;
+  margin-right: 0.5rem;
+  padding: 0.3rem;
+  border-radius: 8px;
+  color: white;
+}
+.input-search {
+  margin-left: 0.3rem;
+  height: 2.2rem;
+  border-radius: 3px;
 }

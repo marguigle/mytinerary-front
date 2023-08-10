@@ -1,6 +1,7 @@
 import "./home.css";
 import LayoutMain from "../layouts/LayoutMain";
 import Carrucel from "../components/carrusel/Carrucel";
+import { Link as Anchor } from "react-router-dom";
 const Home = () => {
   return (
     <LayoutMain>
@@ -13,7 +14,7 @@ const Home = () => {
         </p>
         <button className=" boton-hero">
           {" "}
-          <a href="#">view more</a>{" "}
+          <Anchor to={"cities/"}>view more</Anchor>{" "}
         </button>
       </section>
       <section>
