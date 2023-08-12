@@ -13,8 +13,8 @@ const Carrucel = () => {
       nombre2: "Dubai, United Arab Emirates",
       foto3: "../public/img/london-123785_1280.jpg",
       nombre3: "London, England",
-      foto4: "../public/img/san-fransisco-4065321_1280.jpg",
-      nombre4: "San Francisco, California",
+      foto4: "../public/img/copenhagen-142711_1280.jpg",
+      nombre4: "Copenhagen Denmark",
     },
 
     {
@@ -25,8 +25,8 @@ const Carrucel = () => {
       nombre2: "Paris, France",
       foto3: "../public/img/imadrid.jpg",
       nombre3: "Madrid, Spain",
-      foto4: "../public/img/pyramid-3084261_1280.jpg",
-      nombre4: "Cairo, Egypt",
+      foto4: "../public/img/munich-1572429_1280.jpg",
+      nombre4: "Munich, Germany",
     },
 
     {
@@ -37,8 +37,8 @@ const Carrucel = () => {
       nombre2: "Madrid, Spain",
       foto3: "../public/img/portugal-4828134_1280.jpg",
       nombre3: "Lisbon, Portugal",
-      foto4: "../public/img/valencia-82132_1280.jpg",
-      nombre4: "Valencia, Spain",
+      foto4: "../public/img/washington-dc-85531_1280.jpg",
+      nombre4: "Washington, USA",
     },
     {
       id: 3,
@@ -48,8 +48,8 @@ const Carrucel = () => {
       nombre2: "Lisbon, Portugal",
       foto3: "../public/img/venice-2364149_1280.jpg",
       nombre3: "Venice, Italy",
-      foto4: "../public/img/barcelona1.jpg",
-      nombre4: "Barcelona, Spain",
+      foto4: "../public/img/venice-4756377_1280.jpg",
+      nombre4: "Venice, Italy",
     },
   ];
 
