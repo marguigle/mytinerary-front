@@ -1,10 +1,10 @@
 import "./home.css";
-import LayoutMain from "../layouts/LayoutMain";
+
 import Carrucel from "../components/carrusel/Carrucel";
 import { Link as Anchor } from "react-router-dom";
 const Home = () => {
   return (
-    <LayoutMain>
+    <main className="container-fuid">
       <section className="container-hero">
         <h3>FIND THE PERFECT DESTINATION</h3>
         <p>
@@ -20,7 +20,7 @@ const Home = () => {
       <section>
         <Carrucel />
       </section>
-    </LayoutMain>
+    </main>
   );
 };
 

@@ -1,9 +1,8 @@
-import LayoutCities from "../../layouts/layoutCities";
 import "./cities.css";
 
 const Cities = () => {
   return (
-    <LayoutCities>
+    <main className="container-fuid">
       <div className="main-cities">
         <img
           src="../../../public/img/descarga.jpeg "
@@ -11,8 +10,7 @@ const Cities = () => {
           className="img-construction"
         />
       </div>
-      ;
-    </LayoutCities>
+    </main>
   );
 };
 
