@@ -1,0 +1,17 @@
+.cities-card {
+  max-width: 28vw;
+  border: 2px solid red;
+  gap: 5px;
+  border-radius: 15px;
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+}
+.cities-card img {
+  max-width: 100%;
+  object-fit: cover;
+  box-sizing: content-box;
+}

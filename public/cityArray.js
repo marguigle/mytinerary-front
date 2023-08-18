@@ -1,10 +1,3 @@
-import "./cities.css";
-import CardCities from "../../components/cardCities/CardCities";
-/*  import cityArray from "../../../public/cityArray.js"; */
-/* import { useState, useEffect } from "react"; */
-/* const URL = "../../public/cityArray.js"; */
-/* const URL = cityArray */
-
 const cityArray = [
   {
     id: 1,
@@ -33,7 +26,7 @@ const cityArray = [
   },
   {
     id: 4,
-    image: "../public/img/munich-1572429_1280.jpg",
+    foto: "../public/img/munich-1572429_1280.jpg",
     name: "Munich, Germany",
     lenguage: "German",
     description:
@@ -106,29 +99,4 @@ const cityArray = [
   },
 ];
 
-const Cities = () => {
-  /*   const [data, setData] = useState(null);
-  /*  useEffect(() => setData(data), []); */
-
-  /* useEffect(() => {
-    setData(data);
-    fetch(URL)
-      .then((response) => response.json)
-      .then((datos) => setData(datos));
-  }, []); */
-  /* console.log(data); */
-  return (
-    <main className="container-fuid">
-      <div className="cities-search">
-        <input className="searchCity" type="text" placeholder="Search" />
-      </div>
-      <div className="container-fullCard">
-        {cityArray.map((city) => (
-          <CardCities key={city.id} city={city} />
-        ))}
-      </div>
-    </main>
-  );
-};
-
-export default Cities;
+export default cityArray;
