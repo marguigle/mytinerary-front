@@ -7,6 +7,7 @@ const CardCities = ({ city }) => {
         <img src={city.image} alt="" />
       </div>
       <h4>{city.name}</h4>
+      <p>{city.language}</p>
       <p>{city.description}</p>
     </div>
   );
