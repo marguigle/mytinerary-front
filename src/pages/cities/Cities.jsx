@@ -1,16 +1,13 @@
 import "./cities.css";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { getAllCities } from "../../services/cityService.js";
 import CardCities from "../../components/cardCities/CardCities.jsx";
 
 const Cities = () => {
   const [cities, setCities] = useState([]);
   console.log(cities);
+  const inputSearch = useRef(null);
 
-  /*  useEffect(() => {
-    getAllCities().then(setCities);
-  }, []);
- */
   useEffect(() => {
     console.log("Fetching cities...");
     getAllCities().then((data) => {
@@ -19,14 +16,30 @@ const Cities = () => {
     });
   }, []);
 
+  const handleSearch = () => {
+    const search = inputSearch.current.value;
+    let query = `?`;
+    if (search) {
+      query += "name=" + search;
+    }
+    getAllCities(query).then(setCities);
+  };
   return (
-    <main className="container-fuid">
-      <div className="cities-search">
-        <input className="searchCity" type="text" placeholder="Search" />
+    <main>
+      <div>
+        <input
+          className="searchCity"
+          type="text"
+          placeholder="Search"
+          onInput={handleSearch}
+          ref={inputSearch}
+        />
       </div>
-      {cities.map((item) => (
-        <CardCities key={item._id} city={item} />
-      ))}
+      <div className="container">
+        {cities.map((item) => (
+          <CardCities key={item._id} city={item} />
+        ))}
+      </div>
     </main>
   );
 };
