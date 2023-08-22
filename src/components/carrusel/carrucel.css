@@ -13,6 +13,7 @@
   text-align: center;
   background-color: #000000;
   color: rgb(3, 3, 226);
+  text-shadow: 0px 2px 2px #2b91f1e4;
 }
 
 .contenedor-carrusel {
@@ -35,10 +36,10 @@
 .img-carrusel {
   margin: 3px;
   border: 1px solid rebeccapurple;
-  border-radius: 3px;
+
   width: 420px;
   height: 260px;
-  border-radius: 15px;
+  border-radius: 5px;
 }
 
 .bt-carrusel {
