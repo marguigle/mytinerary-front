@@ -22,7 +22,7 @@ const Cities = () => {
     if (search) {
       query += "name=" + search;
     }
-    getAllCities(query).then(setCities);
+    getAllCities(query).then((data) => setCities(data.response));
   };
   return (
     <main>
