@@ -21,6 +21,7 @@
   flex-wrap: wrap;
   justify-content: space-around;
 }
+/*
 .searchCity {
   width: 30vw;
   height: 2.3em;
@@ -31,13 +32,5 @@
   margin: 0;
   padding-left: 15px;
 }
-.cities-card {
-  background-color: aliceblue;
-  display: flex;
 
-  justify-content: start;
-  align-items: center;
-  flex-wrap: wrap;
-  box-sizing: border-box;
-}
  */

@@ -2,7 +2,7 @@ import "./cardCities.css";
 
 const CardCities = ({ city }) => {
   return (
-    <div className="">
+    <div className="cities-card">
       <div>
         <img src={city.image} alt="" className="imageCity" />
       </div>
