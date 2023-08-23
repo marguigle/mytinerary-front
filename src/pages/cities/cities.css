@@ -1,15 +1,25 @@
-.main {
+.body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+.conteinerSearch {
+  /*  background-image: url("../../public/imgimadrid.jpg"); */
+  background-image: linear-gradient(to top, rgba(137, 78, 2, 0.258), white);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 40vh;
 
-.searchCity {
-  width: 35vw;
-  height: 2.4em;
   display: flex;
   justify-content: center;
-  text-align: start;
+  align-items: center;
+}
+.searchCity {
+  width: 50vw;
+  height: 3em;
+  display: flex;
+  justify-content: center;
+  text-align: center;
   border-color: black;
   border-radius: 15px;
   margin: 20px 0 20px 20px;

@@ -78,11 +78,11 @@ const Cities = () => {
 
   return (
     <main>
-      <div>
+      <div className="conteinerSearch">
         <input
           className="searchCity"
           type="text"
-          placeholder="Search"
+          placeholder="Search a City"
           onInput={handleSearch}
           ref={inputSearch}
         />
