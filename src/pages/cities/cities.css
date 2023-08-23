@@ -1,26 +1,8 @@
-/* .container-fluid {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 10vh;
+.main {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-.cities-card {
-  display: flex;
-  justify-content: center;
-  max-width: 15px;
-}
-
-.container-fullCard {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}*/
 
 .searchCity {
   width: 35vw;

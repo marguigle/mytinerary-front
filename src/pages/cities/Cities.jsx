@@ -2,7 +2,7 @@ import "./cities.css";
 import { useState, useEffect, useRef } from "react";
 import { getAllCities } from "../../services/cityService.js";
 import CardCities from "../../components/cardCities/CardCities.jsx";
-
+import { Link as Anchor } from "react-router-dom";
 const Cities = () => {
   const [cities, setCities] = useState([]);
   console.log(cities);
@@ -35,9 +35,12 @@ const Cities = () => {
           ref={inputSearch}
         />
       </div>
+
       <div className="container">
         {cities.map((item) => (
-          <CardCities key={item._id} city={item} />
+          <Anchor key={item._id} to="/cityDetail">
+            <CardCities city={item} />
+          </Anchor>
         ))}
       </div>
     </main>

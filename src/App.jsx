@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Cities from "./pages/cities/Cities";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import LayoutMain from "./layouts/LayoutMain";
+import CityDetail from "./components/cityDetail/CityDetail";
 
 const router = createBrowserRouter([
   {
@@ -17,6 +18,10 @@ const router = createBrowserRouter([
       {
         path: "/cities",
         element: <Cities />,
+      },
+      {
+        path: "/cityDetail",
+        element: <CityDetail />,
       },
     ],
   },
