@@ -1,8 +1,8 @@
 const CityDetail = () => {
   return (
-    <div>
+    <main>
       <img src="public/img/descarga.png" alt="" />
-    </div>
+    </main>
   );
 };
 

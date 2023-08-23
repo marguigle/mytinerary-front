@@ -38,7 +38,7 @@ const Cities = () => {
 
       <div className="container">
         {cities.map((item) => (
-          <Anchor key={item._id} to="/cityDetail">
+          <Anchor className="anchorCity" key={item._id} to="/cityDetail">
             <CardCities city={item} />
           </Anchor>
         ))}

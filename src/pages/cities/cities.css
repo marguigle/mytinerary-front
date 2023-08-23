@@ -16,3 +16,11 @@
   align-self: center;
   box-shadow: 4px 4px 12px rgba(1, 0, 0, 0.2);
 }
+.anchorCity {
+  text-decoration: none;
+  color: grey;
+  margin: 5px;
+}
+.anchorCity:hover {
+  color: black;
+}
