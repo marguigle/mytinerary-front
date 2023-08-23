@@ -3,8 +3,32 @@
   padding: 0;
   box-sizing: border-box;
 }
-.img-consttrction {
-  width: 100vw;
+.city-image {
+  max-width: 99vw;
+}
+
+.city-detail {
+  max-width: 99vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.img-construction {
+  max-width: 100vw;
+  min-width: 99vw;
+  margin-bottom: 2rem;
+}
+.anchor-CityDetail {
+  text-decoration: none;
+  list-style: none;
+  color: black;
+  background-color: coral;
+  padding: 1rem;
+  list-style: none;
+  border: 1px solid rgb(251, 4, 4);
+  border-radius: 8px;
+  font-weight: bold;
 }
 /* .main-city-detali { */
 /*   /* background-image: "public/img/descarga.png"; */
