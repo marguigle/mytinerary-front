@@ -1,6 +1,6 @@
 .section-carousel {
   width: 100vw;
-  height: 100vh;
+
   box-sizing: border-box;
   max-width: 100vw;
   display: flex;
@@ -14,6 +14,9 @@
   background-color: #000000;
   color: rgb(3, 3, 226);
   text-shadow: 0px 2px 2px #2b91f1e4;
+}
+.hands {
+  display: flex;
 }
 
 .contenedor-carrusel {
@@ -70,7 +73,7 @@
     margin: 3px;
     border: 1px solid rebeccapurple;
     border-radius: 3px;
-    width: 315px;
+    width: 310px;
     height: 140px;
   }
 }
@@ -96,7 +99,7 @@
 }
 @media (max-width: 541px) {
   .tituloCarrusel {
-    /* margin: 3rem 0rem; */
+    margin-bottom: 2rem;
     text-align: center;
     background-color: #000000;
     color: rgb(3, 3, 226);
@@ -114,6 +117,7 @@
     box-sizing: border-box;
     max-width: 100vw;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #000000;

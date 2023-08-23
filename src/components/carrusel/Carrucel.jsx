@@ -72,12 +72,17 @@ const Carrucel = () => {
 
   return (
     <section className="tituloCarrusel">
-      <h2>Popular Mytineraries</h2>
+      <div>
+        <h2>Popular Mytineraries</h2>
+      </div>
 
       <section className="section-carousel">
-        <button className="bt-carroucel-prev" onClick={prev}>
-          {"👈"}
-        </button>
+        <div className="hands">
+          <button className="bt-carroucel-prev" onClick={prev}>
+            {"👈"}
+          </button>
+          {/*  <button onClick={next}>{"👉"}</button> */}
+        </div>
         <div className="contenedor-carrusel">
           {fotoCiudades.map((ciudad) => (
             <div className="contenedorImg" key={ciudad.id}>
