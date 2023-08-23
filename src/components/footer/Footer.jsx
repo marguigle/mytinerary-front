@@ -51,7 +51,7 @@ const Footer = () => {
         </svg>
       </section>
       <section className="container-search ">
-        <button className="bt-search">search</button>
+        <button className="bt-search">Search</button>
         <input className="input-search" type="text" />
       </section>
     </footer>
