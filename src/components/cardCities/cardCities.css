@@ -3,13 +3,9 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 20px 30px; /* Espacio entre las tarjetas */
 }
-/* .cities-card {
-  border: 1px solid #ddd;
-
-  padding: 30px;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-  background-color: #fff;
-} */
+.cities-card {
+  height: 500px;
+}
 
 .imageCity {
   width: 100%;
@@ -33,4 +29,10 @@ p {
 }
 .cities-card:hover {
   transform: scale(1.02);
+}
+@media (max-width: 426px) {
+  .container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
 }
