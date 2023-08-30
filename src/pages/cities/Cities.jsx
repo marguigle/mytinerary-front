@@ -95,7 +95,8 @@ const Cities = () => {
               className="anchorCity"
               to={`/cityDetail?id=${item._id}&name=${encodeURIComponent(
                 item.name
-              )}&image=${encodeURIComponent(item.image)}`}
+              )}&image=${encodeURIComponent(item.image)}
+              &description=${encodeURIComponent(item.description)} `}
             >
               <CardCities city={item} />
             </Anchor>
