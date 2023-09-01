@@ -7,7 +7,7 @@ const CardCities = ({ city }) => {
         <img src={city.image} alt="" className="imageCity" />
       </div>
       <h4>{city.cityName}</h4>
-      <p>{city.language}</p>
+      <p>language: {city.language}</p>
       <p>{city.description}</p>
     </div>
   );

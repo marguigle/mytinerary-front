@@ -66,6 +66,7 @@ h3 {
 }
 .cont-itineraries {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   object-fit: cover;
@@ -78,9 +79,11 @@ h3 {
 }
 .img-guide {
   border: 2px solid red;
+  object-fit: cover;
+  object-position: center top;
   border-radius: 50%;
-  width: 200px;
-  max-height: 200px;
+  width: 150px;
+  max-height: 150px;
 }
 .cont-itinerary-card {
   background-color: rgb(247, 180, 128);
@@ -89,7 +92,23 @@ h3 {
   height: 300px;
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   align-items: center;
   border: 2px solid red;
   box-shadow: 13px 13px 13px black;
+}
+.btn-ViewMore {
+  margin: 1rem;
+  padding: 1rem;
+  width: 25vw;
+  background-color: coral;
+  border-radius: 8px;
+}
+.guide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.guide-name {
+  align-content: center;
 }
