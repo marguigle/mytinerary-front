@@ -1,6 +1,7 @@
 import "./cities.css";
 import { useState, useEffect, useRef } from "react";
 import { getAllCities } from "../../services/cityService.js";
+
 import CardCities from "../../components/cardCities/CardCities.jsx";
 import { Link as Anchor } from "react-router-dom";
 
