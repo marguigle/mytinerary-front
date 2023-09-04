@@ -53,7 +53,7 @@ const Cities = () => {
       </div>
 
       <div className="container">
-        {citiesStore.cities.map((item) => (
+        {citiesStore.filteredCities.map((item) => (
           <div key={item._id}>
             <Anchor
               className="anchorCity"
