@@ -1,28 +1,43 @@
 import "./cities.css";
-import { useState, useEffect, useRef } from "react";
-import { getAllCities } from "../../services/cityService.js";
+import { useEffect, useRef } from "react";
+/* import { getAllCities } from "../../services/cityService.js"; */
 import CardCities from "../../components/cardCities/CardCities.jsx";
 import { Link as Anchor } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import {
+  /* cargarCiudades, */
+  filtrarCiudades,
+  cargarCiudadesAsync,
+} from "../../redux/actions/citiesActions.js";
 
 const Cities = () => {
-  const [cities, setCities] = useState([]);
+  const dispatch = useDispatch();
+
+  /*   const [cities, setCities] = useState([]); */
   const inputSearch = useRef(null);
+  const citiesStore = useSelector((store) => store.cities);
+  console.log("linea 17: " + citiesStore);
 
   useEffect(() => {
-    console.log("Fetching cities...");
-    getAllCities().then((data) => {
-      console.log("Cities data from getAllCities():", data);
-      setCities(data.response);
-    });
+    dispatch(cargarCiudadesAsync());
+    /*   console.log("Fetching cities...");
+    getAllCities().then((cities) => dispatch(cargarCiudades(cities))); */
   }, []);
 
   const handleSearch = () => {
     const search = inputSearch.current.value;
+    dispatch(filtrarCiudades(search));
+    citiesStore.allCities.filter((city) =>
+      city.name.toLowerCase().startswith(search.toLowerCase())
+    );
+
+    /*    
     let query = `?`;
     if (search) {
       query += "name=" + search;
     }
-    getAllCities(query).then((data) => setCities(data.response));
+    */
+    // getAllCities(query).then((data) => setCities(data.response));
   };
 
   return (
@@ -38,7 +53,7 @@ const Cities = () => {
       </div>
 
       <div className="container">
-        {cities.map((item) => (
+        {citiesStore.cities.map((item) => (
           <div key={item._id}>
             <Anchor
               className="anchorCity"
