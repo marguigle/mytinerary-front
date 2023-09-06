@@ -2,11 +2,11 @@ import { useLocation } from "react-router-dom";
 import queryString from "query-string";
 import "./cityDetail.css";
 import { Link as Anchor } from "react-router-dom";
+import CityItineraries from "../cityItineraries/CityItineraries.jsx";
 
 const CityDetail = () => {
   const location = useLocation();
   const { image, name, description } = queryString.parse(location.search);
-
   return (
     <main className="main-city-detail">
       <div className="city-detail ">
@@ -20,8 +20,9 @@ const CityDetail = () => {
             GO BACK
           </Anchor>{" "}
         </div>
+        <CityItineraries />
 
-        <section className="cont-itineraries">
+        {/*         <section className="cont-itineraries">
           <div className="cont-itinerary-card">
             <div className="guide">
               <img src="public/img/guia-1.jpeg" className="img-guide" alt="" />
@@ -34,7 +35,7 @@ const CityDetail = () => {
             <p>Hashtags:</p>
             <button className="btn-ViewMore">view more</button>
           </div>
-        </section>
+        </section> */}
       </div>
     </main>
   );
