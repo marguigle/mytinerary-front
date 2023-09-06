@@ -13,8 +13,8 @@ import {
 const Cities = () => {
   const dispatch = useDispatch();
 
-  /*   const [cities, setCities] = useState([]); */
   const inputSearch = useRef(null);
+
   const citiesStore = useSelector((store) => store.cities);
   console.log("linea 17: " + citiesStore);
 
