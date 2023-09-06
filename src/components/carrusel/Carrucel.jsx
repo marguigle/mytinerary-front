@@ -7,13 +7,13 @@ const Carrucel = () => {
   const fotoCiudades = [
     {
       id: 0,
-      foto1: "../public/img/copenhagen-142711_1280.jpg",
+      foto1: "../img/copenhagen-142711_1280.jpg",
       nombre1: "Copenhagen Denmark",
-      foto2: "../public/img/dubai-2650364_1280.jpg",
+      foto2: "../img/dubai-2650364_1280.jpg",
       nombre2: "Dubai, United Arab Emirates",
-      foto3: "../public/img/london-123785_1280.jpg",
+      foto3: "../img/london-123785_1280.jpg",
       nombre3: "London, England",
-      foto4: "../public/img/copenhagen-142711_1280.jpg",
+      foto4: "../img/copenhagen-142711_1280.jpg",
       nombre4: "Copenhagen Denmark",
     },
 
