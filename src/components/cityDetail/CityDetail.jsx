@@ -6,7 +6,9 @@ import CityItineraries from "../cityItineraries/CityItineraries.jsx";
 
 const CityDetail = () => {
   const location = useLocation();
-  const { image, name, description } = queryString.parse(location.search);
+  const { image, name, description, itinerary } = queryString.parse(
+    location.search
+  );
   return (
     <main className="main-city-detail">
       <div className="city-detail ">
@@ -20,7 +22,7 @@ const CityDetail = () => {
             GO BACK
           </Anchor>{" "}
         </div>
-        <CityItineraries />
+        <CityItineraries cityName={itinerary} />
       </div>
     </main>
   );
