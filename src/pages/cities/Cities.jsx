@@ -57,7 +57,7 @@ const Cities = () => {
           <div key={item._id}>
             <Anchor
               className="anchorCity"
-              to={`/cityDetail?id=${item._id}&name=${encodeURIComponent(
+              to={`/cityDetail/${item._id}?name=${encodeURIComponent(
                 item.name
               )}&image=${encodeURIComponent(item.image)}
               &description=${encodeURIComponent(item.description)} `}

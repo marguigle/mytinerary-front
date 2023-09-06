@@ -1,14 +1,14 @@
-import { useLocation } from "react-router-dom";
+import { useLocation, useParams } from "react-router-dom";
 import queryString from "query-string";
 import "./cityDetail.css";
 import { Link as Anchor } from "react-router-dom";
 import CityItineraries from "../cityItineraries/CityItineraries.jsx";
 
 const CityDetail = () => {
+  const { id } = useParams();
+  console.log("9 " + id);
   const location = useLocation();
-  const { image, name, description, itinerary } = queryString.parse(
-    location.search
-  );
+  const { image, name, description } = queryString.parse(location.search);
   return (
     <main className="main-city-detail">
       <div className="city-detail ">
@@ -22,7 +22,7 @@ const CityDetail = () => {
             GO BACK
           </Anchor>{" "}
         </div>
-        <CityItineraries cityName={itinerary} />
+        <CityItineraries _id={id} />
       </div>
     </main>
   );
