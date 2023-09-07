@@ -6,7 +6,7 @@ const CardCities = ({ city }) => {
       <div>
         <img src={city.image} alt="" className="imageCity" />
       </div>
-      <h4>{city.cityName}</h4>
+      <h4>{city.name}</h4>
       <p>language: {city.language}</p>
       <p>{city.description}</p>
     </div>
