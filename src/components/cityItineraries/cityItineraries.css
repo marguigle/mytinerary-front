@@ -7,10 +7,12 @@ h2 {
   color: white;
 }
 
-.main-city-detail {
+/* .main-city-detail {
   /*  background-color: rgb(191, 170, 162); */
-  background-image: url("img/pexels-david-bartus-2415927.jpg");
-}
+/*  background-image: url("img/pexels-david-bartus-2415927.jpg"); 
+} 
+*/
+
 .city-image {
   max-width: 60vw;
   border: 2px solid red;
@@ -77,12 +79,13 @@ h3 {
   object-fit: cover;
   background-image: url("/img/pexels-david-bartus-2415927.jpg");
   width: 100vw;
-  min-height: 100vh;
+  height: 100vh;
   /*  overflow-y: auto; */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   gap: 2rem;
+  /*  z-index: -1; */
 }
 .img-guide {
   border: 2px solid red;
@@ -104,6 +107,7 @@ h3 {
   border: 2px solid red;
   box-shadow: 13px 13px 13px black;
 }
+
 .btn-ViewMore {
   margin: 0.5rem;
   padding: 0.5rem;
@@ -111,11 +115,11 @@ h3 {
   background-color: coral;
   border-radius: 8px;
 }
-.btn-CloseDetails {
+.btn-ViewMore:hover {
   margin: 0.5rem;
   padding: 0.5rem;
   width: 16vw;
-  background-color: coral;
+  background-color: rgb(246, 102, 50);
   border-radius: 8px;
 }
 .guide {

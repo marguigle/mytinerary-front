@@ -12,4 +12,5 @@
   background-repeat: no-repeat;
   width: 65vw;
   height: 260px;
+  z-index: 1;
 }
