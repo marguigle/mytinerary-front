@@ -22,7 +22,8 @@ const CityDetail = () => {
             GO BACK
           </Anchor>{" "}
         </div>
-        <CityItineraries _id={id} />
+
+        <CityItineraries _id={id} className="cont-itineraries" />
       </div>
     </main>
   );

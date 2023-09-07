@@ -6,8 +6,6 @@ import "./cityItineraries.css";
 const CityItineraries = ({ _id }) => {
   const dispatch = useDispatch();
   const itinerariesStore = useSelector((store) => store.itineraries);
-  console.log("Valor id", _id);
-  console.log("URL actual:", location.pathname);
 
   useEffect(() => {
     console.log(
@@ -29,9 +27,7 @@ const CityItineraries = ({ _id }) => {
     <div>
       <section className="cont-itineraries">
         {cityItineraries.length === 0 ? (
-          <div className="itineraryNotFoud">
-            No itineraries were found for this city.
-          </div>
+          <h2>No itineraries were found for this city.</h2>
         ) : (
           cityItineraries.map((item) => (
             <div className="cont-itinerary-card" key={item._id}>
