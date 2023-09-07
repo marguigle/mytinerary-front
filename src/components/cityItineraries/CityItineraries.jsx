@@ -24,27 +24,31 @@ const CityItineraries = ({ _id }) => {
   );
 
   return (
-    <div>
-      <section className="cont-itineraries">
-        {cityItineraries.length === 0 ? (
-          <h2>No itineraries were found for this city.</h2>
-        ) : (
-          cityItineraries.map((item) => (
-            <div className="cont-itinerary-card" key={item._id}>
-              <div className="guide">
-                <img src={item.guideImage} className="img-guide" alt="" />
-                <p className="guide-name">Guide Name: {item.guideName}</p>
+    <>
+      {" "}
+      <div>
+        <section className="cont-itineraries">
+          {cityItineraries.length === 0 ? (
+            <h2>No itineraries were found for this city.</h2>
+          ) : (
+            cityItineraries.map((item) => (
+              <div className="cont-itinerary-card" key={item._id}>
+                <div className="guide">
+                  <img src={item.guideImage} className="img-guide" alt="" />
+                  <p className="guide-name">Guide Name: {item.guideName}</p>
+                </div>
+                <p>Itinerary: {item.itinerary}</p>
+                <p>Price: {item.price}</p>
+                <p>Duration: {item.duration}</p>
+                <p>Hashtags: {item.hashtags}</p>
+                <button className="btn-ViewMore">view more</button>
               </div>
-              <p>Itinerary: {item.itinerary}</p>
-              <p>Price: {item.price}</p>
-              <p>Duration: {item.duration}</p>
-              <p>Hashtags: {item.hashtags}</p>
-              <button className="btn-ViewMore">view more</button>
-            </div>
-          ))
-        )}
-      </section>
-    </div>
+            ))
+          )}
+        </section>
+      </div>
+      <div className="itinerary-details"></div>
+    </>
   );
 };
 

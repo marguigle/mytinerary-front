@@ -62,15 +62,16 @@ h3 {
   align-content: center;
   font-size: 1.2rem;
   text-shadow: 5px 5px 5px rgb(16, 15, 15);
-  color: rgb(14, 2, 2);
+  color: rgb(2, 2, 2);
 }
 .cont-itineraries {
+  /*  border: 10px solid red; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   object-fit: cover;
-  background-image: url("public/img/pexels-david-bartus-2415927.jpg");
+  background-image: url("/img/pexels-david-bartus-2415927.jpg");
   width: 100vw;
   height: 100vh;
   background-size: cover;

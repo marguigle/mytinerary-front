@@ -8,8 +8,8 @@
   font-size: 2rem;
 }
 .cont-itineraries {
-  border: 10px solid red;
-  background-image: url("public/img/pexels-david-bartus-2415927.jpg");
+  /*  border: 10px solid red; */
+  background-image: url("/img/pexels-david-bartus-2415927.jpg");
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -23,7 +23,7 @@
 }
 .main-city-detail {
   /*  background-color: rgb(191, 170, 162); */
-  background-image: url("public/img/pexels-david-bartus-2415927.jpg");
+  background-image: url("img/pexels-david-bartus-2415927.jpg");
 }
 .city-image {
   max-width: 60vw;
@@ -89,7 +89,7 @@ h3 {
   justify-content: center;
   align-items: center;
   object-fit: cover;
-  background-image: url("public/img/pexels-david-bartus-2415927.jpg");
+  background-image: url("/img/pexels-david-bartus-2415927.jpg");
   width: 100vw;
   height: 100vh;
   background-size: cover;
@@ -131,4 +131,15 @@ h3 {
 }
 .guide-name {
   align-content: center;
+}
+.itinerary-details {
+  border: 5px solid red;
+  border-radius: 16px;
+
+  background-image: url("/img/descarga.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 65vw;
+  height: 260px;
 }
