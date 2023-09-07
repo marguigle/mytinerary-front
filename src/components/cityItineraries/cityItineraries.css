@@ -3,9 +3,8 @@
   padding: 0;
   box-sizing: border-box;
 }
-.itineraryNotFoud {
+h2 {
   color: white;
-  font-size: 2rem;
 }
 .cont-itineraries {
   /*  border: 10px solid red; */
@@ -16,7 +15,7 @@
   align-items: center;
   object-fit: cover;
   width: 100vw;
-  height: 100vh;
+
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -91,7 +90,7 @@ h3 {
   object-fit: cover;
   background-image: url("/img/pexels-david-bartus-2415927.jpg");
   width: 100vw;
-  height: 100vh;
+  /*  height: 100vh; */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -124,6 +123,13 @@ h3 {
   background-color: coral;
   border-radius: 8px;
 }
+.btn-CloseDetails {
+  margin: 0.5rem;
+  padding: 0.5rem;
+  width: 16vw;
+  background-color: coral;
+  border-radius: 8px;
+}
 .guide {
   display: flex;
   flex-direction: column;
@@ -133,6 +139,10 @@ h3 {
   align-content: center;
 }
 .itinerary-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   border: 5px solid red;
   border-radius: 16px;
 

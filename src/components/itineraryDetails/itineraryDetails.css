@@ -1,0 +1,15 @@
+.itinerary-info {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  border: 5px solid red;
+  border-radius: 16px;
+
+  background-image: url("/img/descarga.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 65vw;
+  height: 260px;
+}
