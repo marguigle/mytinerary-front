@@ -6,20 +6,7 @@
 h2 {
   color: white;
 }
-.cont-itineraries {
-  /*  border: 10px solid red; */
-  background-image: url("/img/pexels-david-bartus-2415927.jpg");
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  object-fit: cover;
-  width: 100vw;
 
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
 .main-city-detail {
   /*  background-color: rgb(191, 170, 162); */
   background-image: url("img/pexels-david-bartus-2415927.jpg");
@@ -90,7 +77,8 @@ h3 {
   object-fit: cover;
   background-image: url("/img/pexels-david-bartus-2415927.jpg");
   width: 100vw;
-  /*  height: 100vh; */
+  min-height: 100vh;
+  /*  overflow-y: auto; */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
