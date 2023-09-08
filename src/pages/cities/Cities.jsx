@@ -41,7 +41,7 @@ const Cities = () => {
   };
 
   return (
-    <main>
+    <main className="city-main-container">
       <div className="conteinerSearch">
         <input
           className="searchCity"

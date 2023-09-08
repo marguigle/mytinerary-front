@@ -37,12 +37,12 @@ const CityItineraries = ({ _id }) => {
             <div className="cont-itinerary-card" key={item._id}>
               <div className="guide">
                 <img src={item.guideImage} className="img-guide" alt="" />
-                <p className="guide-name">Guide Name: {item.guideName}</p>
+                <p className="guide-name">GUIDE : {item.guideName}</p>
               </div>
-              <p>Itinerary: {item.itinerary}</p>
-              <p>Price: {item.price}</p>
-              <p>Duration: {item.duration}</p>
-              <p>Hashtags: {item.hashtags}</p>
+              <p>IINERARY : {item.itinerary}</p>
+              <p>PRICE : {item.price}</p>
+              <p>DURATION : {item.duration}</p>
+              <p>HASHTAGS : {item.hashtags}</p>
               <button
                 className="btn-ViewMore"
                 onClick={() => handleToggleDetails(item)}
