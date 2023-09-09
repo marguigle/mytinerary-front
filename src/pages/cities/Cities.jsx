@@ -1,11 +1,9 @@
 import "./cities.css";
 import { useEffect, useRef } from "react";
-/* import { getAllCities } from "../../services/cityService.js"; */
 import CardCities from "../../components/cardCities/CardCities.jsx";
 import { Link as Anchor } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import {
-  /* cargarCiudades, */
   filtrarCiudades,
   cargarCiudadesAsync,
 } from "../../redux/actions/citiesActions.js";
@@ -20,8 +18,6 @@ const Cities = () => {
 
   useEffect(() => {
     dispatch(cargarCiudadesAsync());
-    /*   console.log("Fetching cities...");
-    getAllCities().then((cities) => dispatch(cargarCiudades(cities))); */
   }, []);
 
   const handleSearch = () => {
@@ -30,14 +26,6 @@ const Cities = () => {
     citiesStore.allCities.filter((city) =>
       city.name.toLowerCase().startswith(search.toLowerCase())
     );
-
-    /*    
-    let query = `?`;
-    if (search) {
-      query += "name=" + search;
-    }
-    */
-    // getAllCities(query).then((data) => setCities(data.response));
   };
 
   return (

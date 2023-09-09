@@ -76,7 +76,7 @@ h3 {
   object-fit: cover;
   background-image: url("/img/pexels-david-bartus-2415927.jpg");
   width: 100vw;
-  height: 100vh;
+  /*   height: 100vh; */
   /*  overflow-y: auto; */
   background-size: cover;
   background-repeat: no-repeat;
@@ -96,7 +96,7 @@ h3 {
   background-color: rgb(247, 180, 128);
   border-radius: 20px;
   width: 65vw;
-  height: 250px;
+  min-height: 250px;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
