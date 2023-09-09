@@ -96,7 +96,7 @@ h3 {
   background-color: rgb(247, 180, 128);
   border-radius: 20px;
   width: 65vw;
-  min-height: 250px;
+  /* min-height: 250px; */
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;

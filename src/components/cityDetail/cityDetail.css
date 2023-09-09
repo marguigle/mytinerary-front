@@ -90,7 +90,7 @@ h3 {
   background-color: rgb(247, 180, 128);
   border-radius: 20px;
   width: 80vw;
-  height: 300px;
+  /*   height: 300px; */
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
