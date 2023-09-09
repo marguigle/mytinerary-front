@@ -94,6 +94,7 @@ h3 {
 }
 .cont-itinerary-card {
   background-color: rgb(247, 180, 128);
+  margin: 2rem;
   border-radius: 20px;
   width: 65vw;
   /* min-height: 250px; */
