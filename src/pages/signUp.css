@@ -36,3 +36,8 @@
 .birdh-day {
   margin-left: 0.5rem;
 }
+#select {
+  min-width: 60vh;
+  max-width: 90vw;
+  margin-left: 2rem;
+}
