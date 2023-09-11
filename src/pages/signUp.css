@@ -1,0 +1,38 @@
+.form-container {
+  min-width: 100vw;
+  min-height: 70vh;
+  background-color: rgb(116, 116, 248);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.formulary {
+  background-color: bisque;
+  border-radius: 5px;
+  max-width: 80vw;
+  min-width: 70vw;
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 10px 10px 8px rgba(1, 0, 0, 0.2);
+}
+.input {
+  min-width: 60vh;
+  max-width: 90vw;
+  margin-left: 2rem;
+}
+.photo {
+  margin-left: 1.9rem;
+}
+.age {
+  margin-left: 1.8rem;
+}
+.password {
+  margin-left: 0.5rem;
+}
+.birdh-day {
+  margin-left: 0.5rem;
+}
