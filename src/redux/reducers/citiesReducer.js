@@ -3,7 +3,7 @@ import {
   cargarCiudades,
   filtrarCiudades,
   cargarCiudadesAsync,
-} from "../actions/citiesActions";
+} from "../actions/citiesActions.js";
 
 const initialStore = {
   allCities: [],
