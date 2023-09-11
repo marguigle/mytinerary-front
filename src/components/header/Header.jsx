@@ -11,9 +11,14 @@ const Header = () => {
       name: "cities",
       to: "cities/",
     },
+
     {
-      name: "login",
-      to: "#",
+      name: "Sign Up",
+      to: "signup",
+    },
+    {
+      name: "Sign In",
+      to: "signin",
     },
   ];
 
@@ -35,7 +40,10 @@ const Header = () => {
             <Anchor to={linkMenu[1].to}>{linkMenu[1].name}</Anchor>{" "}
           </li>
           <li>
-            <Anchor to={"#"}>{linkMenu[2].name}</Anchor>{" "}
+            <Anchor to={linkMenu[2].to}>{linkMenu[2].name}</Anchor>{" "}
+          </li>
+          <li>
+            <Anchor to={linkMenu[3].to}>{linkMenu[3].name}</Anchor>{" "}
           </li>
         </ul>
       </div>
