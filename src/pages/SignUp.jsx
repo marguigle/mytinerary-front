@@ -24,7 +24,7 @@ const SignUp = () => {
     e.preventDefault();
     const aux = [name, email, photo, age, password, phone, country];
 
-    if (!aux.some((campo) => campo.current.value)) {
+    if (aux.some((campo) => !campo.current.value)) {
       alert("todos los campos deben completarse");
     } else {
       const body = {
@@ -36,22 +36,36 @@ const SignUp = () => {
         phone: phone.current.value,
         country: country.current.value,
       };
+      console.log(body);
       dispatch(signUp(body));
     }
   };
+
   return (
     <div className="form-container">
       <form className="formulary" onSubmit={handleSubmit}>
         <label className=" m-3">
           {" "}
           Name:
-          <input type="text" name="name" className="input" ref={name} />
+          <input
+            type="text"
+            name="name"
+            className="input"
+            ref={name}
+            required
+          />
         </label>
 
         <label className="m-2">
           {" "}
           Email:
-          <input type="email" name="email" className="input" ref={email} />
+          <input
+            type="email"
+            name="email"
+            className="input"
+            ref={email}
+            required
+          />
         </label>
 
         <label className="m-2">
@@ -72,6 +86,7 @@ const SignUp = () => {
             type="password"
             name="password"
             className="input password"
+            required
             ref={password}
           />
         </label>
@@ -79,7 +94,13 @@ const SignUp = () => {
         <label className="m-2">
           {" "}
           Phone:
-          <input type="text" name="phone" className="input phone" ref={phone} />
+          <input
+            type="text"
+            name="phone"
+            className="input phone"
+            ref={phone}
+            required
+          />
         </label>
         <label className="m-2">
           {" "}

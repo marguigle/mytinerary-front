@@ -29,8 +29,44 @@ export const signUp = createAsyncThunk("create_user", async (body) => {
       "http://localhost:3000/api/auth/signup",
       body
     );
-    console.log(response);
+    localStorage.setItem("token", response.data.token);
+    return response.data;
   } catch (error) {
     console.error(error);
   }
 });
+export const signIn = createAsyncThunk("login_user", async (body) => {
+  try {
+    const response = await axios.post(
+      "http://localhost:3000/api/auth/signin",
+      body
+    );
+    localStorage.setItem("token");
+    return response.data;
+  } catch (error) {
+    console.error(error);
+  }
+});
+export const signInWithToken = createAsyncThunk(
+  "login_user_token",
+  async () => {
+    try {
+      const token = localStorage.getItem("token", response.data.token);
+      const response = await axios.post(
+        "http://localhost:3000/api/auth/signin/token",
+        {},
+        {
+          headers: {
+            Authorization: "Bearer " + token,
+          },
+        }
+      );
+      return {
+        user: response.data.user,
+        token: token,
+      };
+    } catch (error) {
+      console.error(error);
+    }
+  }
+);
