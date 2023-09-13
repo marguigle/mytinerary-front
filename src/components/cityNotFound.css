@@ -1,9 +1,14 @@
 .city-not-gound-cont {
   min-width: 100vw;
   min-height: 80vh;
-  background-color: black;
-  color: white;
+  background-color: rgb(163, 162, 162);
+  color: black;
   display: flex;
   justify-content: center;
   align-items: center;
+  text-shadow: 10px 10px 10px 10px black;
+  background-image: linear-gradient(to left, rgb(82, 80, 80), white);
+}
+.city-not-gound-cont > h2 {
+  text-shadow: 10px 10px 10px 10px black;
 }

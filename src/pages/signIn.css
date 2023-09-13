@@ -20,28 +20,11 @@
   box-shadow: 10px 10px 8px rgba(1, 0, 0, 0.2);
 }
 
-.input {
-  border-radius: 5px;
-
-  /*  margin-left: 2rem; */
-}
-
 /*
-.photo {
-  margin-left: 1.9rem;
-}
-.age {
-  margin-left: 2.4rem;
-}
-.password {
-  margin-left: 0.8rem;
-}
-.phone {
-  margin-left: 0.5rem;
-}
-#select {
-  min-width: 60vh;
-  max-width: 90vw;
-  margin-left: 2rem;
+input
+.lavel-input-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
  */

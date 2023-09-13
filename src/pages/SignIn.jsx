@@ -1,4 +1,4 @@
-import "./signUp.css";
+import "./signIn.css";
 import { useEffect, useRef } from "react";
 /* import axios from "axios"; */
 import { useDispatch } from "react-redux";
@@ -10,11 +10,7 @@ const SignIn = () => {
   const email = useRef(null);
   const password = useRef(null);
 
-  useEffect(() => {
-    /*  axios("https://restcountries.com/v3.1/all?fields=name").then(({ data }) =>
-      setCountries(data.map((country) => country.name.common)) 
-    );*/
-  }, []);
+  useEffect(() => {}, []);
   const handleSubmit = (e) => {
     e.preventDefault();
     const aux = [email, password];
@@ -40,29 +36,32 @@ const SignIn = () => {
   return (
     <div className="form-container">
       <form className="formulary" onSubmit={handleSubmit}>
-        <label className="m-2">
-          {" "}
-          Email:
-          <input
-            type="email"
-            name="email"
-            className="input"
-            ref={email}
-            required
-          />
-        </label>
-
-        <label className="m-2">
-          {" "}
-          Password:
-          <input
-            type="password"
-            name="password"
-            className="input password"
-            required
-            ref={password}
-          />
-        </label>
+        <div className="lavel-input-cont">
+          <label className="">
+            {" "}
+            Email:
+            <input
+              type="email"
+              name="email"
+              className="input"
+              ref={email}
+              required
+            />
+          </label>
+        </div>
+        <div className="lavel-input-cont">
+          <label className="">
+            {" "}
+            Password:
+            <input
+              type="password"
+              name="password"
+              className="input password"
+              required
+              ref={password}
+            />
+          </label>
+        </div>
 
         <button className="btn btn-secondary">sign in</button>
       </form>
