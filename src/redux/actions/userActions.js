@@ -1,4 +1,4 @@
-import { createAsyncThunk } from "@reduxjs/toolkit";
+import { createAsyncThunk, createAction } from "@reduxjs/toolkit";
 import axios from "axios";
 
 export const cargarUsuario = createAsyncThunk("cargar_usuario", (user) => {
@@ -54,8 +54,9 @@ export const signInWithToken = createAsyncThunk(
     }
   }
 );
-/* export const logout = createAction( "reset", () => {
-  localStorage.removeItem('token')
+export const logout = createAction("reset", () => {
+  localStorage.removeItem("token");
   return {
-      payload : null
-  }}) */
+    payload: null,
+  };
+});

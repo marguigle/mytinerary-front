@@ -1,12 +1,17 @@
 import { createReducer } from "@reduxjs/toolkit";
-import { signUp, signIn, signInWithToken } from "../actions/userActions.js";
+import {
+  signUp,
+  signIn,
+  signInWithToken,
+  logout,
+} from "../actions/userActions.js";
 
-const initialStore = {
+const initialState = {
   user: null,
   token: null,
 };
 
-export const userReducer = createReducer(initialStore, (builder) => {
+export const userReducer = createReducer(initialState, (builder) => {
   builder
     .addCase(signUp.fulfilled, (state, action) => {
       return {
@@ -27,6 +32,13 @@ export const userReducer = createReducer(initialStore, (builder) => {
         ...state,
         user: action.payload.user,
         token: action.payload.token,
+      };
+    })
+    .addCase(logout, (state) => {
+      return {
+        ...state,
+        user: null,
+        token: null,
       };
     });
 });

@@ -1,8 +1,10 @@
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import "./header.css";
 import { Link } from "react-router-dom";
+import { logout } from "../../redux/actions/userActions.js";
 
 const Header = () => {
+  const dispatch = useDispatch();
   const user = useSelector((store) => store.user.user);
   const linkMenu = [
     {
@@ -43,7 +45,9 @@ const Header = () => {
           </li>
 
           {user ? (
-            <button>Log Out</button>
+            <button onClick={() => dispatch(logout)} className="bt-logout">
+              Log Out
+            </button>
           ) : (
             <>
               <li>

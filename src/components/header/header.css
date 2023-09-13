@@ -24,7 +24,7 @@
   background-color: coral;
   height: 48px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 
   border: 1px solid #646161;
   position: relative;
@@ -77,6 +77,22 @@
 }
 
 .menu ul li a:hover {
+  background-color: rgb(247, 80, 20);
+  color: white;
+  border: none;
+  box-shadow: 2px 2px 2px rgb(73, 27, 10);
+}
+.bt-logout {
+  border-radius: 8px;
+  padding-right: 2rem;
+  text-decoration: none;
+  color: black;
+  background-color: coral;
+  display: block;
+  padding: 10px 12px;
+  text-shadow: 1px 1px 1px black;
+}
+.bt-logout:hover {
   background-color: rgb(247, 80, 20);
   color: white;
   border: none;
