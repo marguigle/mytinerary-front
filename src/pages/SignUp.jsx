@@ -3,6 +3,7 @@ import { useState, useEffect, useRef } from "react";
 import axios from "axios";
 import { useDispatch } from "react-redux";
 import { signUp } from "../redux/actions/userActions";
+import { GoogleOAuthProvider, GoogleLogin } from "@react-oauth/google";
 const SignUp = () => {
   const [countries, setCountries] = useState([]);
   const dispatch = useDispatch();
@@ -115,6 +116,16 @@ const SignUp = () => {
           </select>
         </label>
         <button className="btn btn-secondary">sign up</button>
+        <GoogleOAuthProvider clientId="820051858064-7lpsa7m8gg8opmj0c9i9qhddm8rikv2b.apps.googleusercontent.com">
+          <GoogleLogin
+            onSuccess={(credentialResponse) => {
+              console.log(credentialResponse);
+            }}
+            onError={() => {
+              console.log("Login Failed");
+            }}
+          />
+        </GoogleOAuthProvider>
       </form>
     </div>
   );
