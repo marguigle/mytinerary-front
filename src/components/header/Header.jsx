@@ -1,7 +1,9 @@
+import { useSelector } from "react-redux";
 import "./header.css";
-import { Link as Anchor } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Header = () => {
+  const user = useSelector((store) => store.user.user);
   const linkMenu = [
     {
       name: "home",
@@ -34,17 +36,24 @@ const Header = () => {
 
         <ul className="menu">
           <li>
-            <Anchor to={linkMenu[0].to}>{linkMenu[0].name}</Anchor>{" "}
+            <Link to={linkMenu[0].to}>{linkMenu[0].name}</Link>{" "}
           </li>
           <li>
-            <Anchor to={linkMenu[1].to}>{linkMenu[1].name}</Anchor>{" "}
+            <Link to={linkMenu[1].to}>{linkMenu[1].name}</Link>{" "}
           </li>
-          <li>
-            <Anchor to={linkMenu[2].to}>{linkMenu[2].name}</Anchor>{" "}
-          </li>
-          <li>
-            <Anchor to={linkMenu[3].to}>{linkMenu[3].name}</Anchor>{" "}
-          </li>
+
+          {user ? (
+            <button>Log Out</button>
+          ) : (
+            <>
+              <li>
+                <Link to={linkMenu[2].to}>{linkMenu[2].name}</Link>{" "}
+              </li>
+              <li>
+                <Link to={linkMenu[3].to}>{linkMenu[3].name}</Link>{" "}
+              </li>
+            </>
+          )}
         </ul>
       </div>
     </nav>
