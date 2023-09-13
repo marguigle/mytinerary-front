@@ -49,9 +49,6 @@ const Header = () => {
           </li>
 
           {user ? (
-            /*     <button onClick={() => dispatch(logout)} className="bt-logout">
-              Log Out
-            </button> */
             <li>
               <Link to={linkMenu[0].to} onClick={() => dispatch(logout())}>
                 {linkMenu[4].name}

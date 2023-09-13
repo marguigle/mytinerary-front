@@ -7,6 +7,7 @@ import {
   filtrarCiudades,
   cargarCiudadesAsync,
 } from "../../redux/actions/citiesActions.js";
+import CityNotFound from "../../components/CityNotFound.jsx";
 
 const Cities = () => {
   const dispatch = useDispatch();
@@ -55,6 +56,7 @@ const Cities = () => {
           </div>
         ))}
       </div>
+      <CityNotFound></CityNotFound>
     </main>
   );
 };

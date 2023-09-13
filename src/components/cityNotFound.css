@@ -1,0 +1,9 @@
+.city-not-gound-cont {
+  min-width: 100vw;
+  min-height: 80vh;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
