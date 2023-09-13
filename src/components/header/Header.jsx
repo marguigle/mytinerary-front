@@ -24,6 +24,10 @@ const Header = () => {
       name: "Sign In",
       to: "signin",
     },
+    {
+      name: "Sign Out",
+      to: "/",
+    },
   ];
 
   return (
@@ -45,9 +49,14 @@ const Header = () => {
           </li>
 
           {user ? (
-            <button onClick={() => dispatch(logout)} className="bt-logout">
+            /*     <button onClick={() => dispatch(logout)} className="bt-logout">
               Log Out
-            </button>
+            </button> */
+            <li>
+              <Link to={linkMenu[0].to} onClick={() => dispatch(logout())}>
+                {linkMenu[4].name}
+              </Link>{" "}
+            </li>
           ) : (
             <>
               <li>
