@@ -5,6 +5,7 @@ import { useDispatch } from "react-redux";
 import { signUp } from "../redux/actions/userActions";
 import { GoogleOAuthProvider, GoogleLogin } from "@react-oauth/google";
 import jwtDecode from "jwt-decode";
+
 const SignUp = () => {
   const [countries, setCountries] = useState([]);
   const dispatch = useDispatch();

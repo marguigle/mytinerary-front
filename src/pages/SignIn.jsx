@@ -1,9 +1,12 @@
 import "./signIn.css";
 import { useEffect, useRef } from "react";
-/* import axios from "axios"; */
+
 import { useDispatch } from "react-redux";
 import { signIn } from "../redux/actions/userActions.js";
 import { useNavigate } from "react-router-dom";
+import { GoogleOAuthProvider, GoogleLogin } from "@react-oauth/google";
+import jwtDecode from "jwt-decode";
+
 const SignIn = () => {
   const dispatch = useDispatch();
   const navegate = useNavigate();
@@ -64,6 +67,18 @@ const SignIn = () => {
         </div>
 
         <button className="btn btn-secondary">sign in</button>
+        <GoogleOAuthProvider clientId="820051858064-7lpsa7m8gg8opmj0c9i9qhddm8rikv2b.apps.googleusercontent.com">
+          <GoogleLogin
+            onSuccess={(credentialResponse) => {
+              console.log(credentialResponse);
+              const infoUser = jwtDecode(credentialResponse.credential);
+              console.log(infoUser);
+            }}
+            onError={() => {
+              console.log("Login Failed");
+            }}
+          />
+        </GoogleOAuthProvider>
       </form>
     </div>
   );
