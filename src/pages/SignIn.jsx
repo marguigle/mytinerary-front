@@ -35,7 +35,16 @@ const SignIn = () => {
       });
     }
   };
+  /* const handleSubmitGoogle = (e)=>{
+  const aux = [ email,  password];
+  const body = {
+    
+    email: infoUser.email,
+    password:
+ 
+  };
 
+} */
   return (
     <div className="form-container">
       <form className="formulary" onSubmit={handleSubmit}>
@@ -73,6 +82,8 @@ const SignIn = () => {
               console.log(credentialResponse);
               const infoUser = jwtDecode(credentialResponse.credential);
               console.log(infoUser);
+              console.log(infoUser.email);
+              console.log(infoUser.password);
             }}
             onError={() => {
               console.log("Login Failed");
