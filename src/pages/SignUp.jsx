@@ -4,6 +4,7 @@ import axios from "axios";
 import { useDispatch } from "react-redux";
 import { signUp } from "../redux/actions/userActions";
 import { GoogleOAuthProvider, GoogleLogin } from "@react-oauth/google";
+import jwtDecode from "jwt-decode";
 const SignUp = () => {
   const [countries, setCountries] = useState([]);
   const dispatch = useDispatch();
@@ -42,16 +43,30 @@ const SignUp = () => {
     }
   };
 
+  /* const handleSubmitGoogle = (e)=>{
+  const aux = [name, email, photo, age, password, phone, country];
+  const body = {
+    name: name.current.value,
+    email: email.current.value,
+    photo: photo.current.value,
+    age: age.current.value,
+    password: password.current.value,
+    phone: phone.current.value,
+    country: country.current.value,
+  };
+
+} */
+
   return (
     <div className="form-container">
       <form className="formulary" onSubmit={handleSubmit}>
-        <label className=" m-3">
+        <label className=" m-2">
           {" "}
           Name:
           <input
             type="text"
             name="name"
-            className="input"
+            className="input name"
             ref={name}
             required
           />
@@ -63,7 +78,7 @@ const SignUp = () => {
           <input
             type="email"
             name="email"
-            className="input"
+            className="input email"
             ref={email}
             required
           />
@@ -120,6 +135,8 @@ const SignUp = () => {
           <GoogleLogin
             onSuccess={(credentialResponse) => {
               console.log(credentialResponse);
+              const infoUser = jwtDecode(credentialResponse.credential);
+              console.log(infoUser);
             }}
             onError={() => {
               console.log("Login Failed");

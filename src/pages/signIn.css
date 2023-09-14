@@ -20,11 +20,10 @@
   box-shadow: 10px 10px 8px rgba(1, 0, 0, 0.2);
 }
 
-/*
-input
-.lavel-input-cont {
+input .lavel-input-cont {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-start;
+  width: 100%;
 }
- */

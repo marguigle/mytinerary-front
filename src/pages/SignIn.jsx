@@ -43,7 +43,7 @@ const SignIn = () => {
             <input
               type="email"
               name="email"
-              className="input"
+              className="input email"
               ref={email}
               required
             />
