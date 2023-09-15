@@ -26,7 +26,9 @@ const SignIn = () => {
 
         password: password.current.value,
       };
+
       console.log(body);
+
       dispatch(signIn(body)).then((response) => {
         if (response.payload.success) {
           alert("Welcome " + response.payload.user.name);
@@ -35,16 +37,23 @@ const SignIn = () => {
       });
     }
   };
-  /* const handleSubmitGoogle = (e)=>{
-  const aux = [ email,  password];
-  const body = {
-    
-    email: infoUser.email,
-    password:
- 
-  };
+  const handleSubmitGoogle = (credentialResponse) => {
+    const infoUser = jwtDecode(credentialResponse.credential);
+    console.log(infoUser.email);
+    console.log(infoUser.sub);
+    console.log(infoUser);
 
-} */
+    const body = {
+      email: infoUser.email,
+      password: infoUser.sub + "aX_",
+    };
+    dispatch(signIn(body)).then((response) => {
+      if (response.payload.success) {
+        alert("Welcome " + response.payload.user.name);
+        navegate("/");
+      }
+    });
+  };
   return (
     <div className="form-container">
       <form className="formulary" onSubmit={handleSubmit}>
@@ -78,13 +87,7 @@ const SignIn = () => {
         <button className="btn btn-secondary">sign in</button>
         <GoogleOAuthProvider clientId="820051858064-7lpsa7m8gg8opmj0c9i9qhddm8rikv2b.apps.googleusercontent.com">
           <GoogleLogin
-            onSuccess={(credentialResponse) => {
-              console.log(credentialResponse);
-              const infoUser = jwtDecode(credentialResponse.credential);
-              console.log(infoUser);
-              console.log(infoUser.email);
-              console.log(infoUser.password);
-            }}
+            onSuccess={handleSubmitGoogle}
             onError={() => {
               console.log("Login Failed");
             }}

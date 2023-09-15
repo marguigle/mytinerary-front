@@ -5,8 +5,9 @@ import { useDispatch } from "react-redux";
 import { signUp } from "../redux/actions/userActions";
 import { GoogleOAuthProvider, GoogleLogin } from "@react-oauth/google";
 import jwtDecode from "jwt-decode";
-
+import { useNavigate } from "react-router-dom";
 const SignUp = () => {
+  const navegate = useNavigate();
   const [countries, setCountries] = useState([]);
   const dispatch = useDispatch();
 
@@ -40,23 +41,36 @@ const SignUp = () => {
         country: country.current.value,
       };
       console.log(body);
-      dispatch(signUp(body));
+      dispatch(signUp(body)).then((response) => {
+        if (response.payload.success) {
+          alert("Sign Up Successful " + response.payload.userData.name);
+          navegate("/");
+        }
+      });
     }
   };
 
-  /* const handleSubmitGoogle = (e)=>{
-  const aux = [name, email, photo, age, password, phone, country];
-  const body = {
-    name: name.current.value,
-    email: email.current.value,
-    photo: photo.current.value,
-    age: age.current.value,
-    password: password.current.value,
-    phone: phone.current.value,
-    country: country.current.value,
-  };
+  const handleSubmitGoogle = (credentialResponse) => {
+    const infoUser = jwtDecode(credentialResponse.credential);
+    console.log(infoUser);
 
-} */
+    const body = {
+      name: infoUser.given_name,
+      email: infoUser.email,
+      photo: infoUser.picture,
+      age: 0,
+      password: infoUser.sub + "aX_",
+      phone: 0,
+      country: "Argentina",
+    };
+    dispatch(signUp(body)).then((response) => {
+      if (response.payload.success) {
+        alert("Sign Up Successful " + response.payload.userData.name);
+        console.log(response.payload);
+        navegate("/");
+      }
+    });
+  };
 
   return (
     <div className="form-container">
@@ -134,13 +148,10 @@ const SignUp = () => {
         <button className="btn btn-secondary">sign up</button>
         <GoogleOAuthProvider clientId="820051858064-7lpsa7m8gg8opmj0c9i9qhddm8rikv2b.apps.googleusercontent.com">
           <GoogleLogin
-            onSuccess={(credentialResponse) => {
-              console.log(credentialResponse);
-              const infoUser = jwtDecode(credentialResponse.credential);
-              console.log(infoUser);
-            }}
+            onSuccess={handleSubmitGoogle}
             onError={() => {
               console.log("Login Failed");
+              alert("Login Failed");
             }}
           />
         </GoogleOAuthProvider>
