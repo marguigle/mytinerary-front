@@ -75,77 +75,56 @@ const SignUp = () => {
   return (
     <div className="form-container">
       <form className="formulary" onSubmit={handleSubmit}>
-        <label className=" m-2">
-          {" "}
-          Name:
-          <input
-            type="text"
-            name="name"
-            className="input name"
-            ref={name}
-            required
-          />
-        </label>
+        <label className=" m-1"> Name:</label>
+        <input
+          type="text"
+          name="name"
+          className="input name"
+          ref={name}
+          required
+        />
 
-        <label className="m-2">
-          {" "}
-          Email:
-          <input
-            type="email"
-            name="email"
-            className="input email"
-            ref={email}
-            required
-          />
-        </label>
+        <label className="m-1"> Email:</label>
+        <input
+          type="email"
+          name="email"
+          className="input email"
+          ref={email}
+          required
+        />
 
-        <label className="m-2">
-          {" "}
-          Photo:
-          <input type="text" name="photo" className="input photo" ref={photo} />
-        </label>
-        <label className="m-2">
-          {" "}
-          Age:
-          <input type="text" name="age" className="input age" ref={age} />
-        </label>
+        <label className="m-1"> Photo:</label>
+        <input type="text" name="photo" className="input photo" ref={photo} />
+        <label className="m-2"> Age:</label>
+        <input type="text" name="age" className="input age" ref={age} />
 
-        <label className="m-2">
-          {" "}
-          Password:
-          <input
-            type="password"
-            name="password"
-            className="input password"
-            required
-            ref={password}
-          />
-        </label>
+        <label className="m-1"> Password:</label>
 
-        <label className="m-2">
-          {" "}
-          Phone:
-          <input
-            type="text"
-            name="phone"
-            className="input phone"
-            ref={phone}
-            required
-          />
-        </label>
-        <label className="m-2">
-          {" "}
-          Country:
-          <select name="country" id="select" ref={country}>
-            {countries.length > 0 &&
-              countries.map((country) => (
-                <option key={`opt-country-${country}`} value={country}>
-                  {country}{" "}
-                </option>
-              ))}
-          </select>
-        </label>
-        <button className="btn btn-secondary">sign up</button>
+        <input
+          type="password"
+          name="password"
+          className="input password"
+          required
+          ref={password}
+        />
+        <label className="m-1"> Phone:</label>
+        <input
+          type="text"
+          name="phone"
+          className="input phone"
+          ref={phone}
+          required
+        />
+        <label className="m-1"> Country:</label>
+        <select name="country" id="select" ref={country}>
+          {countries.length > 0 &&
+            countries.map((country) => (
+              <option key={`opt-country-${country}`} value={country}>
+                {country}{" "}
+              </option>
+            ))}
+        </select>
+        <button className="btn btn-secondary m-2">sign up</button>
         <GoogleOAuthProvider clientId="820051858064-7lpsa7m8gg8opmj0c9i9qhddm8rikv2b.apps.googleusercontent.com">
           <GoogleLogin
             onSuccess={handleSubmitGoogle}

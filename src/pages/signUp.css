@@ -37,29 +37,29 @@
 .name {
   margin-left: 1rem;
   text-align: left;
-  width: 300px;
+  width: 400px;
 }
 .email {
   margin-left: 1rem;
-  width: 300px;
+  width: 400px;
 }
 .photo {
   margin-left: 1rem;
-  width: 300px;
+  width: 400px;
 }
 
 .age {
   margin-left: 1rem;
-  width: 300px;
+  width: 400px;
 }
 .password {
   margin-left: 1rem;
   text-align: left;
-  width: 300px;
+  width: 400px;
 }
 .phone {
   margin-left: 1rem;
-  width: 300px;
+  width: 400px;
 }
 /* #select {
   min-width: 60vh;
@@ -69,4 +69,33 @@
  */
 .btn {
   margin-bottom: 0.5rem;
+}
+@media ((max-width: 426px)) {
+  .name {
+    text-align: left;
+    max-width: 210px;
+  }
+  .email {
+    max-width: 210px;
+  }
+  .photo {
+    width: 400px;
+    max-width: 210px;
+  }
+
+  .age {
+    width: 400px;
+    max-width: 210px;
+  }
+  .password {
+    text-align: left;
+    width: 400px;
+    max-width: 210px;
+  }
+  .phone {
+    max-width: 210px;
+  }
+  #select {
+    max-width: 210px;
+  }
 }
