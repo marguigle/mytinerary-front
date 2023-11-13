@@ -7,11 +7,12 @@
   width: 100vw;
 }
 .conteinerSearch {
-  /*  background-image: url("../../public/imgimadrid.jpg"); */
-  background-image: linear-gradient(to top, rgba(137, 78, 2, 0.258), white);
+  background-image: url("../../public/img/pack-flechas-infograficas/istockphoto-681719680-1024x1024.jpg");
+  /*  background-image: linear-gradient(to top, rgba(137, 78, 2, 0.258), white); */
   background-size: cover;
   background-repeat: no-repeat;
-  height: 40vh;
+  height: 60vh;
+  background-position: center 35%;
 
   display: flex;
   justify-content: center;
@@ -22,7 +23,8 @@
   height: 3em;
   display: flex;
   justify-content: center;
-  text-align: center;
+  text-align: start;
+  padding-left: 1rem;
   border-color: black;
   border-radius: 15px;
   margin: 20px 0 20px 20px;
