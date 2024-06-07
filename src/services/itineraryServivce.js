@@ -4,6 +4,7 @@ import dotenv from "dotenv";
 // Cargar variables de entorno desde el archivo .env
 dotenv.config();
 const baseURL = process.env.URL_BASE || "http://localhost:3000/api";
+
 const itineraryQueries = axios.create({
   baseURL: `${baseURL}/itineraries`, // Combinar la URL base con la ruta específica
 });

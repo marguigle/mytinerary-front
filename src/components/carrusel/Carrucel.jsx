@@ -82,7 +82,6 @@ const Carrucel = () => {
           <button className="bt-carroucel-prev" onClick={prev}>
             {"👈"}
           </button>
-          {/*  <button onClick={next}>{"👉"}</button> */}
         </div>
         <div className="contenedor-carrusel">
           {fotoCiudades.map((ciudad) => (
