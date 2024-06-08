@@ -5,7 +5,7 @@ import dotenv from "dotenv";
 dotenv.config();
 
 // Obtener la URL base de las variables de entorno
-const baseURL = process.env.URL_BASE || "http://localhost:3000/api";
+const baseURL = process.env.URL_BASE;
 
 const cityQueries = axios.create({
   baseURL: `${baseURL}/cities`, // Combinar la URL base con la ruta específica
