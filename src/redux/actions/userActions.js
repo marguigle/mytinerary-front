@@ -10,7 +10,7 @@ export const cargarUsuario = createAsyncThunk("cargar_usuario", (user) => {
 export const signUp = createAsyncThunk("create_user", async (body) => {
   try {
     const response = await axios.post(
-      "http://localhost:3000/api/auth/signup",
+      `${process.env.URL_BASE}/auth/signup`,
       body
     );
     localStorage.setItem("token", response.data.token);
@@ -22,7 +22,7 @@ export const signUp = createAsyncThunk("create_user", async (body) => {
 export const signIn = createAsyncThunk("login_user", async (body) => {
   try {
     const response = await axios.post(
-      "http://localhost:3000/api/auth/signin",
+      `${process.env.URL_BASE}/auth/signIn`,
       body
     );
     localStorage.setItem("token", response.data.token);
@@ -37,7 +37,7 @@ export const signInWithToken = createAsyncThunk(
     try {
       const token = localStorage.getItem("token");
       const response = await axios.post(
-        "http://localhost:3000/api/auth/signin/token",
+        `${process.env.URL_BASE}/auth/signin/token`,
         {},
         {
           headers: {
