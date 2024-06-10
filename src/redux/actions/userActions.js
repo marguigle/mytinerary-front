@@ -1,8 +1,5 @@
 import { createAsyncThunk, createAction } from "@reduxjs/toolkit";
 import axios from "axios";
-import dotenv from "dotenv";
-
-dotenv.config();
 
 export const cargarUsuario = createAsyncThunk("cargar_usuario", (user) => {
   return {
@@ -13,7 +10,7 @@ export const cargarUsuario = createAsyncThunk("cargar_usuario", (user) => {
 export const signUp = createAsyncThunk("create_user", async (body) => {
   try {
     const response = await axios.post(
-      `${process.env.URL_BASE}/auth/signup`,
+      "http://localhost:3000/api/auth/signup",
       body
     );
     localStorage.setItem("token", response.data.token);
@@ -25,7 +22,7 @@ export const signUp = createAsyncThunk("create_user", async (body) => {
 export const signIn = createAsyncThunk("login_user", async (body) => {
   try {
     const response = await axios.post(
-      `${process.env.URL_BASE}/auth/signIn`,
+      "http://localhost:3000/api/auth/signin",
       body
     );
     localStorage.setItem("token", response.data.token);
@@ -40,7 +37,7 @@ export const signInWithToken = createAsyncThunk(
     try {
       const token = localStorage.getItem("token");
       const response = await axios.post(
-        `${process.env.URL_BASE}/auth/signin/token`,
+        "http://localhost:3000/api/auth/signin/token",
         {},
         {
           headers: {
