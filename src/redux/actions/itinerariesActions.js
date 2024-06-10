@@ -5,7 +5,9 @@ export const cargarItinerarios = createAsyncThunk(
   "cargar_itinerarios",
   async () => {
     try {
-      const peticion = await axios("http://localhost:3000/api/itineraries");
+      const peticion = await axios(
+        import.meta.env.VITE_APP_URL_BASE + "/itineraries"
+      );
       return peticion.data.response;
     } catch (error) {
       console.log(error);
