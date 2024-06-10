@@ -1,5 +1,8 @@
 import { createAsyncThunk, createAction } from "@reduxjs/toolkit";
 import axios from "axios";
+import dotenv from "dotenv";
+
+dotenv.config();
 
 export const cargarUsuario = createAsyncThunk("cargar_usuario", (user) => {
   return {
