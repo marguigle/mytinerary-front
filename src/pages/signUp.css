@@ -8,16 +8,15 @@
 }
 
 .formulary {
-  background-color: bisque;
+  background-color: rgb(247, 244, 241);
   border-radius: 5px;
-  /*  max-width: 100vw; */
+
   min-width: 100vw;
   min-height: 60vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  box-shadow: 10px 10px 8px rgba(1, 0, 0, 0.2);
 }
 .label {
   width: 100%;
