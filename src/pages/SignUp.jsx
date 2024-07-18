@@ -6,6 +6,7 @@ import { signUp } from "../redux/actions/userActions";
 import { GoogleOAuthProvider, GoogleLogin } from "@react-oauth/google";
 import jwtDecode from "jwt-decode";
 import { useNavigate } from "react-router-dom";
+
 const SignUp = () => {
   const navegate = useNavigate();
   const [countries, setCountries] = useState([]);
