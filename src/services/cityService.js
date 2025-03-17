@@ -9,6 +9,7 @@ const cityQueries = axios.create({
 
 export const getAllCities = async (queryParams = "") => {
   try {
+    console.log("Base URL:", baseURL);
     const response = await cityQueries.get(queryParams);
     return response.data;
   } catch (error) {

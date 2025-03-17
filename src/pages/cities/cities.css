@@ -7,7 +7,7 @@
   width: 100vw;
 }
 .conteinerSearch {
-  background-image: url("https://firebasestorage.googleapis.com/v0/b/mytinerary-11a55.appspot.com/o/istockphoto-681719680-1024x1024.jpg?alt=media&token=81d89be5-4325-4b94-8fa2-94df3f4f0a20");
+  background-image: url("public/img/un avion comercial.png");
   /*  background-image: linear-gradient(to top, rgba(137, 78, 2, 0.258), white); */
   background-size: cover;
   background-repeat: no-repeat;

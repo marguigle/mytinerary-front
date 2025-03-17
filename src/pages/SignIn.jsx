@@ -56,8 +56,8 @@ const SignIn = () => {
     });
   };
   return (
-    <form className="form-container" onSubmit={handleSubmit}>
-      <div className="mb-1">
+    <div className="form-container" onSubmit={handleSubmit}>
+      <form className="mb-1 form-signin">
         <label htmlFor="exampleFormControlInput1" className="form-label">
           Email address
         </label>
@@ -69,21 +69,22 @@ const SignIn = () => {
           className="form-control  input-email"
           id="exampleFormControlInput1"
         />
-      </div>
-      <div className="mb-3">
-        <label htmlFor="exampleFormControlInput2" className="form-label">
-          Password
-        </label>
-        <input
-          type="password"
-          name="password"
-          ref={password}
-          className="form-control input-password"
-          id="exampleFormControlInput2"
-        />
-      </div>
 
-      <button className="btn btn-secondary">sign in</button>
+        <div className="mb-3">
+          <label htmlFor="exampleFormControlInput2" className="form-label">
+            Password
+          </label>
+          <input
+            type="password"
+            name="password"
+            ref={password}
+            className="form-control input-password"
+            id="exampleFormControlInput2"
+          />
+        </div>
+
+        <button className="btn btn-secondary">sign in</button>
+      </form>
 
       <GoogleOAuthProvider clientId="820051858064-7lpsa7m8gg8opmj0c9i9qhddm8rikv2b.apps.googleusercontent.com">
         <GoogleLogin
@@ -93,7 +94,7 @@ const SignIn = () => {
           }}
         />
       </GoogleOAuthProvider>
-    </form>
+    </div>
   );
 };
 

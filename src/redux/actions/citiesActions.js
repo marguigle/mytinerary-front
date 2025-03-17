@@ -14,7 +14,7 @@ export const cargarCiudadesAsync = createAsyncThunk(
       const peticion = await axios(
         import.meta.env.VITE_APP_URL_BASE + "/cities"
       );
-      console.log(peticion);
+      // console.log(peticion);
       return peticion.data.response;
     } catch (error) {
       console.log(error);

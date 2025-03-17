@@ -4,7 +4,7 @@ import Carrucel from "../components/carrusel/Carrucel";
 import { Link as Anchor } from "react-router-dom";
 const Home = () => {
   return (
-    <main className="container-fuid">
+    <main className="container-fuid ">
       <section className="container-hero">
         <h3>FIND THE PERFECT DESTINATION</h3>
         <p>
